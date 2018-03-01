@@ -9,9 +9,10 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-
     <!-- our CSS -->
     <link rel="stylesheet" href="css/styles.css"/>
 
@@ -41,21 +42,25 @@
                 </div>
             </div>
 
-            <!-- TODO 1
+            <!-- DONE 1
             Make a "New Game" button
             -->
+            <button id="new-game-button" class="btn btn-primary">New Game</button>
+
         </section>
 
         <!-- things that should not show up until the (first) game has started -->
         <section id="game">
 
-            <!-- TODO 4
+            <!-- DONE 4
             Add some instructions so the user knows what to do.
             -->
+            <p>Spell as many words as you can, using only these letters:</p>
 
             <!-- TODO 5
             Make an empty container to hold the letter chips.
             -->
+            <div id="allowed-letters"></div>
 
             <!-- the form via which the user attempts to submit new words -->
             <form id="word-attempt-form">
